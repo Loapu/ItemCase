@@ -30,9 +30,9 @@ public class PlayerLogger {
     /**
      * Prefix placed in front of every message.
      */
-    private static String prefix = ChatColor.BLUE + "[ItemCase]";
-
+    private static String prefix = ChatColor.DARK_GREY + "[" + ChatColor.DARK_AQUA + "Verwaltung" + ChatColor.DARK_GREY + "] ";
+ 
     public static void message(Player player, String message) {
-        player.sendMessage(prefix + ": " + ChatColor.RESET + message);
+        player.sendMessage(prefix + ChatColor.RESET + message);
     }
 }
